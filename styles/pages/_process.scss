@@ -1,0 +1,203 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  padding-top: calc(var(--header-height) + 5vh);
+  overflow: hidden;
+  & > h2 {
+    font-size: 1rem;
+    line-height: 18px;
+    letter-spacing: 4.5px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  & > span {
+    letter-spacing: 0.9px;
+    font-size: 2.5rem;
+    line-height: 44px;
+    font-weight: 700;
+    margin-bottom: 60px;
+  }
+  .projects-container {
+    width: 100%;
+    .project-card {
+      display: flex;
+      margin-bottom: 70px;
+      border: 2px solid black;
+      border-radius: 10px;
+      transition: all 1s ease-in-out;
+      &:nth-of-type(2n) {
+        transform: translateX(10vw);
+        opacity: 0;
+      }
+      &:nth-of-type(2n + 1) {
+        transform: translateX(-10vw);
+        opacity: 0;
+      }
+      &.roll-in {
+        transform: translateX(0vw);
+        opacity: 1;
+      }
+      & .img-container {
+        width: 680px;
+        height: 420px;
+
+        video {
+          object-fit: cover;
+          border-radius: 10px;
+        }
+      }
+      .stuff-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 75px;
+        justify-content: center;
+        width: 50%;
+        & > span {
+          font-size: 1rem;
+          line-height: 18px;
+          letter-spacing: 2px;
+          font-weight: 300;
+          margin-bottom: 20px;
+          position: relative;
+        }
+        & > span::after {
+          content: "";
+          position: absolute;
+          width: 100px;
+          height: 1px;
+          background-color: var(--black-col);
+          top: 7px;
+          right: 55px;
+        }
+        .heading {
+          font-family: Roboto, sans-serif;
+          font-weight: 500;
+          color: var(--black-col);
+          font-size: 2.3rem;
+          line-height: 44px;
+          text-decoration: none;
+          text-transform: capitalize;
+        }
+        p {
+          margin-top: 10px;
+          font-size: 16px;
+          line-height: 32px;
+          font-weight: 400;
+          color: var(--grey-col);
+          word-wrap: break-word;
+        }
+        .link-tag {
+          letter-spacing: 2px;
+          font-weight: 300;
+          margin-top: 20px;
+          text-decoration: none;
+          color: var(--black-col);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          * {
+            transition: all 0.3s ease;
+          }
+
+          span {
+            font-size: 0.6rem;
+            margin-right: 1rem;
+          }
+
+          .arrow {
+            font-size: 1.7rem;
+          }
+          &:hover {
+            span {
+              font-size: 0.8rem;
+            }
+            .arrow {
+              transform: scaleX(125%) translateX(20%);
+            }
+          }
+        }
+      }
+    }
+    .project-card:nth-child(even) {
+      flex-direction: row-reverse;
+      .stuff-container {
+        align-items: flex-end;
+        padding-left: 0px;
+        padding-right: 75px;
+
+        & > span::after {
+          left: 55px;
+        }
+        p {
+          text-align: end;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .projects {
+    & > span {
+      text-align: center;
+    }
+    .projects-container {
+      .project-card {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        border: 1px solid grey;
+        margin: 2vh 0;
+        padding: 5px;
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+
+        .img-container {
+          width: 100%;
+          height: 40vh;
+        }
+        .stuff-container {
+          width: 90%;
+          text-align: center !important;
+          padding-top: 5vh;
+          padding-left: 0;
+          padding-right: 0 !important;
+          & > span {
+            font-size: 0.8rem;
+            line-height: 1rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-align: left !important;
+            width: 100%;
+          }
+          & > span::after {
+            display: none;
+          }
+          .heading {
+            font-size: 2.3rem;
+            line-height: 2.3rem;
+            width: 100%;
+            text-align: center;
+          }
+          p {
+            width: 100%;
+            margin-top: 15px;
+            font-size: 1rem;
+            line-height: 2rem;
+            text-align: center !important;
+          }
+          .link-tag {
+            align-self: flex-start;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,34 +1,34 @@
 import Link from "next/link";
-import { useCallback, useEffect, useRef } from "react";
-
+import { useCallback, useEffect, useRef, useMemo } from "react";
 export default function ProjectCard({ proj }: { proj: Record<string, any> }) {
   const cardRef = useRef<HTMLDivElement>(null);
-  const intersectionCallBack: IntersectionObserverCallback = useCallback((entries) => {
+  const intersectionOptions: IntersectionObserverInit = useMemo(() => ({ threshold: 0.5 }), []);
+  const intersectionCallBack: IntersectionObserverCallback = useCallback((entries, obv) => {
     if (window?.innerWidth > 900) {
       const intersecting: boolean = entries[0]?.isIntersecting ?? false;
       entries.forEach(() => {
         if (intersecting) {
           cardRef.current?.classList.add("roll-in");
-        } else {
-          cardRef.current?.classList.remove("roll-in");
+          obv.disconnect();
         }
       });
     }
   }, []);
 
+  const observer = useRef<IntersectionObserver | null>(null);
+
   useEffect(() => {
-    let observer: undefined | IntersectionObserver = undefined;
+    observer.current = new IntersectionObserver(intersectionCallBack, intersectionOptions);
+    const rememberedObserver = observer.current;
     if (cardRef.current) {
-      const intersectionOptions: IntersectionObserverInit = { threshold: 0.5 };
-      observer = new IntersectionObserver(intersectionCallBack, intersectionOptions);
-      observer.observe(cardRef.current);
+      observer.current.observe(cardRef.current);
     }
     return () => {
-      if (observer) {
-        observer.disconnect();
+      if (rememberedObserver) {
+        rememberedObserver.disconnect();
       }
     };
-  }, [cardRef, intersectionCallBack]);
+  }, [cardRef, intersectionCallBack, intersectionOptions, observer]);
 
   return (
     <div className="project-card" ref={cardRef}>

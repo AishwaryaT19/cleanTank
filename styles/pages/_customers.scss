@@ -1,4 +1,20 @@
 #Customers {
   min-height: calc(100vh - var(--footer-height));
   padding-top: var(--header-height);
+  display: grid;
+  place-items: center;
+  .component-container {
+    width: 100%;
+    padding: 50px 20vw;
+    display: flex;
+    flex-direction: column;
+    .type-container {
+      display: flex;
+      flex-direction: column;
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
 }

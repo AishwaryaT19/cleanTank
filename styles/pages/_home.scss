@@ -1,11 +1,14 @@
 @keyframes animate {
   0% {
-    transform: rotateX(90deg);
+    opacity: 0;
+    transform: rotateX(270deg);
   }
   100% {
+    opacity: 1;
     transform: rotateX(0deg);
   }
 }
+
 @keyframes rollIn {
   0% {
     opacity: 0;
@@ -73,29 +76,29 @@
       text-transform: uppercase;
     }
     .place {
-      transform: rotateX(90deg);
+      opacity: 0;
       font-weight: 700;
       animation: animate 1s linear forwards;
     }
     h1 {
-      transform: rotateX(90deg);
+      opacity: 0;
       margin-top: 28px;
       margin-bottom: 0;
       font-size: 3.5rem;
       line-height: 4rem;
       width: 100%;
       text-align: center;
-      animation: 2s animate 1s linear forwards;
+      animation: 1s animate 1s linear forwards;
     }
     p {
-      transform: rotateX(90deg);
+      opacity: 0;
       width: 50%;
       margin: 25px 0px;
       text-align: center;
       font-size: 1rem;
       line-height: 32px;
       font-weight: 400;
-      animation: 1s animate 2s linear forwards;
+      animation: 0.5s animate 2s linear forwards;
     }
     a {
       text-decoration: none;
@@ -109,6 +112,8 @@
       border: 2px solid var(--white-col);
       transition: 0.3s all ease;
       position: relative;
+      opacity: 0;
+      animation: 1s animate 2.5s linear forwards;
     }
     a:hover {
       background-color: var(--white-col);

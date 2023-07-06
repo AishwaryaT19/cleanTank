@@ -38,22 +38,22 @@ export const clients = [
   {
     clientHead: "Chandigarh University",
     clientImage: "/assests/images/clients/cu.jpeg",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[2].type
   },
   {
     clientHead: "Chandigarh Group of Colleges",
     clientImage: "/assests/images/clients/cgc.jpeg",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[2].type
   },
   {
     clientHead: "Punjab University",
     clientImage: "/assests/images/clients/pu.png",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[2].type
   },
   {
     clientHead: "Harcourt Butler Technical University",
     clientImage: "/assests/images/clients/hbtu.jpeg",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[2].type
   },
   {
     clientHead: "ITBP",
@@ -68,17 +68,17 @@ export const clients = [
   {
     clientHead: "MAX HOSPITAL",
     clientImage: "/assests/images/clients/maxhospital.webp",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[1].type
   },
   {
     clientHead: "Fortis Hospital",
     clientImage: "/assests/images/clients/fortis.png",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[1].type
   },
   {
     clientHead: "Regency Hospital",
     clientImage: "/assests/images/clients/regency.jpeg",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[1].type
   },
   {
     clientHead: "Punjab Mandi",
@@ -118,22 +118,22 @@ export const clients = [
   {
     clientHead: "RU",
     clientImage: "/assests/images/clients/ru.jpeg",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[2].type
   },
   {
     clientHead: "Guru Academy",
     clientImage: "/assests/images/clients/guruacademy.jpeg",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[2].type
   },
   {
     clientHead: "Apollo",
     clientImage: "/assests/images/clients/apollo.jpeg",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[1].type
   },
   {
     clientHead: "Rama University",
     clientImage: "/assests/images/clients/rama.jpeg",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[2].type
   },
   {
     clientHead: "CSJMU",
@@ -143,7 +143,7 @@ export const clients = [
   {
     clientHead: "Kendriya vidhyala",
     clientImage: "/assests/images/clients/kendriyavid.png",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[2].type
   },
   {
     clientHead: "FCI",
@@ -158,7 +158,7 @@ export const clients = [
   {
     clientHead: "DPS",
     clientImage: "/assests/images/clients/dps.jpeg",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[2].type
   },
   {
     clientHead: "Dainik Jagran",

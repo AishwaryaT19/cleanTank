@@ -18,6 +18,7 @@
     height: 100%;
     img {
       object-fit: contain;
+      filter: invert(1);
     }
   }
   #navigation {

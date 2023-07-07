@@ -1,7 +1,5 @@
 import Link from "next/link";
-import { RiFacebookFill, RiInstagramFill, RiLinkedinFill } from "react-icons/ri";
-import { TfiPinterest } from "react-icons/tfi";
-import { logo, infs, footer, copyright } from "./Info";
+import { infs, footer, copyright, footerLogo } from "./Info";
 import Image from "next/image";
 export default function Footer() {
   return (
@@ -10,7 +8,7 @@ export default function Footer() {
       <div className="main">
         <div className="info">
           <Link href="/" className="img-container">
-            <Image src={logo} alt="back" fill sizes="100%" />
+            <Image src={footerLogo} alt="back" fill sizes="100%" />
           </Link>
           <p>{infs[0].inf}</p>
         </div>

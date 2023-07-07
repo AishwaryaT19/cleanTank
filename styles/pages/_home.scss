@@ -9,36 +9,6 @@
   }
 }
 
-@keyframes rollIn {
-  0% {
-    opacity: 0;
-    transform: rotateX(-90deg);
-  }
-  100% {
-    transform: rotateX(0deg);
-    opacity: 1;
-  }
-}
-@keyframes leftIn {
-  0% {
-    opacity: 0;
-    transform: rotateY(90deg);
-  }
-  100% {
-    transform: rotateY(0deg);
-    opacity: 1;
-  }
-}
-@keyframes rightIn {
-  0% {
-    opacity: 0;
-    transform: rotateY(-90deg);
-  }
-  100% {
-    transform: rotateY(0deg);
-    opacity: 1;
-  }
-}
 #Home {
   overflow: hidden;
   font-family: Roboto, sans-serif;
@@ -53,7 +23,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // background-image: url("/assests/images/main.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -76,7 +45,6 @@
       text-transform: uppercase;
     }
     .place {
-      opacity: 0;
       font-weight: 700;
       animation: animate 1s linear forwards;
     }
@@ -163,10 +131,12 @@
       width: 370px;
       height: 420px;
       justify-content: flex-start;
-      visibility: hidden;
+      transform: translateX(-20vw);
+      transition: all 1s ease-in-out;
+      opacity: 0;
       &.left-in {
-        animation: 2s leftIn 0s linear normal;
-        visibility: visible;
+        transform: translate(0vw);
+        opacity: 1;
       }
       img {
         object-fit: cover;
@@ -202,10 +172,12 @@
       width: calc(90% - 370px);
       text-align: left;
       height: auto;
-      visibility: hidden;
+      transform: translateX(20vw);
+      transition: all 1s ease-in-out;
+      opacity: 0;
       &.right-in {
-        animation: 2s rightIn 0s linear normal;
-        visibility: visible;
+        transform: translateX(0vw);
+        opacity: 1;
       }
       h2 {
         font-size: 0.9rem;
@@ -271,10 +243,12 @@
       justify-content: space-between;
       width: 60vw;
       height: 30vh;
-      visibility: hidden;
+      opacity: 0;
+      transition: all 1s ease-in;
+      transform: translateY(20vh);
       &.roll-in {
-        animation: 2s rollIn 0s linear normal;
-        visibility: visible;
+        transform: translateY(0);
+        opacity: 1;
       }
       .name-container {
         width: 10vw;

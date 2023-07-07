@@ -50,14 +50,17 @@
     & > span {
       @include spanStyle();
     }
+    & > .txt {
+      animation: animate 1s linear forwards;
+    }
     & > h1 {
       margin-top: 30px;
       margin-bottom: 0;
       font-size: 3.5rem;
       line-height: 3.5rem;
       width: 60%;
-
       text-align: center;
+      animation: 1s animate 1s linear forwards;
     }
   }
   .desc {

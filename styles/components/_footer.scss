@@ -3,8 +3,7 @@
   height: var(--footer-height);
   width: 100%;
   position: relative;
-  // position: absolute;
-  // position: sticky;
+
   display: flex;
   background-repeat: no-repeat;
   background-position: center;
@@ -45,6 +44,7 @@
 
         img {
           object-fit: contain;
+          filter: invert(1);
         }
       }
       p {

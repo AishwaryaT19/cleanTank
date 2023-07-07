@@ -263,6 +263,8 @@
       flex-direction: column;
       padding-top: 10vh;
       padding-bottom: 10vh;
+      transform: translateY(0vh);
+      opacity: 1;
       .img-container {
         height: 40vh;
         width: 100%;

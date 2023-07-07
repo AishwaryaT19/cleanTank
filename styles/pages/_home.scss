@@ -368,9 +368,10 @@
       width: 100%;
       padding-top: 5vh;
       .img-container {
-        visibility: visible;
         width: 75vw;
         height: 40vh;
+        opacity: 1;
+        transform: translateX(0vw);
 
         .shadow {
           width: 75vw;
@@ -384,7 +385,8 @@
         }
       }
       .stuff-container {
-        visibility: visible;
+        opacity: 1;
+        transform: translateX(0vw);
 
         width: 100%;
         text-align: center;
@@ -408,61 +410,62 @@
         }
       }
     }
-    .projects {
-      .projects-container {
-        .project-card {
-          display: flex !important;
-          flex-direction: column !important;
-          justify-content: center !important;
-          align-items: center !important;
-          border: 1px solid grey;
-          margin: 2vh 0;
-          padding: 5px;
-          .img-container {
-            width: 100%;
-            height: 40vh;
-          }
-          .stuff-container {
-            width: 90%;
-            text-align: center !important;
-            padding-top: 5vh;
-            padding-left: 0;
-            padding-right: 0 !important;
-            & > span {
-              font-size: 0.8rem;
-              line-height: 1rem;
-              letter-spacing: 2px;
-              margin-bottom: 10px;
-              text-align: left !important;
-              width: 100%;
-            }
-            & > span::after {
-              display: none;
-            }
-            .heading {
-              font-size: 2.3rem;
-              line-height: 2.3rem;
-              width: 100%;
-              text-align: center;
-            }
-            p {
-              width: 100%;
-              margin-top: 15px;
-              font-size: 1rem;
-              line-height: 2rem;
-              // text-align: center !important;
-            }
-            .link-tag {
-              align-self: flex-start;
-            }
-          }
-        }
-      }
-    }
+    // .projects {
+    //   .projects-container {
+    //     .project-card {
+    //       display: flex !important;
+    //       flex-direction: column !important;
+    //       justify-content: center !important;
+    //       align-items: center !important;
+    //       border: 1px solid grey;
+    //       margin: 2vh 0;
+    //       padding: 5px;
+    //       .img-container {
+    //         width: 100%;
+    //         height: 40vh;
+    //       }
+    //       .stuff-container {
+    //         width: 90%;
+    //         text-align: center !important;
+    //         padding-top: 5vh;
+    //         padding-left: 0;
+    //         padding-right: 0 !important;
+    //         & > span {
+    //           font-size: 0.8rem;
+    //           line-height: 1rem;
+    //           letter-spacing: 2px;
+    //           margin-bottom: 10px;
+    //           text-align: left !important;
+    //           width: 100%;
+    //         }
+    //         & > span::after {
+    //           display: none;
+    //         }
+    //         .heading {
+    //           font-size: 2.3rem;
+    //           line-height: 2.3rem;
+    //           width: 100%;
+    //           text-align: center;
+    //         }
+    //         p {
+    //           width: 100%;
+    //           margin-top: 15px;
+    //           font-size: 1rem;
+    //           line-height: 2rem;
+    //           // text-align: center !important;
+    //         }
+    //         .link-tag {
+    //           align-self: flex-start;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
 
     .testimonials {
+      opacity: 1;
+      transform: translateX(0vw);
       .main-container {
-        visibility: visible;
         margin-top: 1rem;
         display: flex;
         align-items: center;

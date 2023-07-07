@@ -41,6 +41,9 @@ export default function Header() {
         <Link className="heading" href="/process" onClick={() => setMobileView(!mobileView)}>
           Process
         </Link>
+        <Link className="heading" href="/customers" onClick={() => setMobileView(!mobileView)}>
+          Customers
+        </Link>
         <div className={`${mobileView ? "open" : "close"} socials`}>
           <Link
             className="heading"

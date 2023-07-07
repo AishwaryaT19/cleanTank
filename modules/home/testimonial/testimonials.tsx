@@ -31,10 +31,10 @@ export default function Testimonials() {
   }, [cardRef, intersectionCallBack]);
 
   return (
-    <section className="testimonials">
+    <section className="testimonials" ref={cardRef}>
       <h2>Testimonials</h2>
       <span>{testimonialHeading}</span>
-      <div className="main-container" ref={cardRef}>
+      <div className="main-container">
         <div className="name-container">
           {testimonials.map((test, index) => {
             return (

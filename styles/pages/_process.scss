@@ -6,7 +6,7 @@
   width: 80%;
   height: auto;
   margin: auto;
-  padding-top: calc(var(--header-height) + 5vh);
+  padding-top: calc(var(--header-height) + 10vh);
   overflow: hidden;
   & > h2 {
     font-size: 1rem;
@@ -30,6 +30,7 @@
       margin-bottom: 70px;
       border: 2px solid black;
       border-radius: 10px;
+      overflow: hidden;
       transition: all 1s ease-in-out;
       &:nth-of-type(2n) {
         transform: translateX(10vw);
@@ -46,10 +47,8 @@
       & .img-container {
         width: 680px;
         height: 420px;
-
         video {
           object-fit: cover;
-          border-radius: 10px;
         }
       }
       .stuff-container {

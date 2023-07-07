@@ -3,7 +3,6 @@
   height: var(--footer-height);
   width: 100%;
   position: relative;
-
   display: flex;
   background-repeat: no-repeat;
   background-position: center;
@@ -29,7 +28,7 @@
     color: white;
   }
   .main {
-    height: 65%;
+    height: 90%;
     position: relative;
     > div {
       display: flex;
@@ -41,7 +40,6 @@
       .img-container {
         height: 25%;
         width: 20%;
-
         img {
           object-fit: contain;
           filter: invert(1);
@@ -60,9 +58,8 @@
     .contact {
       text-align: right;
       height: 100%;
-
       h2 {
-        height: 40%;
+        height: 20%;
         text-transform: capitalize;
         font-size: 1.2rem;
         display: flex;
@@ -70,7 +67,7 @@
         justify-content: flex-end;
       }
       .touch {
-        height: 60%;
+        height: 80%;
         display: flex;
         flex-direction: column;
         > a {
@@ -90,10 +87,12 @@
     }
   }
   .sub {
-    height: 35%;
+    height: 10%;
     width: 100%;
+
     .rights {
       width: 100%;
+
       span {
         text-transform: uppercase;
         font-size: 0.8rem;
@@ -150,8 +149,10 @@
     }
     .sub {
       .rights {
+        display: grid;
+        place-items: center;
         span {
-          font-size: 0.6rem;
+          font-size: 0.4rem;
         }
       }
     }

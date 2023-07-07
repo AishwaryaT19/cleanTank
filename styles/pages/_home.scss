@@ -1,7 +1,7 @@
 @keyframes animate {
   0% {
     opacity: 0;
-    transform: rotateX(270deg);
+    transform: rotateX(90deg);
   }
   100% {
     opacity: 1;
@@ -161,7 +161,6 @@
           font-size: 11rem;
           font-weight: 700;
         }
-
         mix-blend-mode: lighten;
         &:hover {
           mix-blend-mode: darken;
@@ -220,6 +219,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    transform: translateY(10vh);
+    opacity: 0;
+    transition: all 1s ease-in;
+    &.roll-in {
+      transform: translateY(0);
+      opacity: 1;
+    }
     h2 {
       font-size: 1rem;
       line-height: 18px;
@@ -243,13 +249,7 @@
       justify-content: space-between;
       width: 60vw;
       height: 30vh;
-      opacity: 0;
-      transition: all 1s ease-in;
-      transform: translateY(20vh);
-      &.roll-in {
-        transform: translateY(0);
-        opacity: 1;
-      }
+
       .name-container {
         width: 10vw;
         height: 30vh;

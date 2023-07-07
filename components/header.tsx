@@ -1,4 +1,4 @@
-import React, { useCallback, useRef, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import { logo } from "./Info";
 import Link from "next/link";
@@ -9,25 +9,25 @@ import { useRouter } from "next/router";
 export default function Header() {
   const [mobileView, setMobileView] = useState<boolean>(false);
   const router = useRouter();
-  const currentRoute = router.asPath as string;
-  const headerRef = useRef<any>();
+  const headerRef = useRef<HTMLElement>(null);
+  const isPermaDark = useMemo(() => /process|customers/.test(router.asPath), [router.asPath]);
+  console.log(isPermaDark);
   const scrollCallback = useCallback(
     (scrollPos: number) => {
-      //  currentRoute.startsWith("/projects")
-      if (scrollPos > 75 || currentRoute.startsWith("/projects")) {
-        (headerRef.current as HTMLElement).classList.add("dark");
-        (headerRef.current as HTMLElement).classList.remove("light");
+      if (scrollPos > 75 || isPermaDark) {
+        headerRef.current?.classList.add("dark");
+        headerRef.current?.classList.remove("light");
       } else {
-        (headerRef.current as HTMLElement).classList.remove("dark");
-        (headerRef.current as HTMLElement).classList.add("light");
+        headerRef.current?.classList.remove("dark");
+        headerRef.current?.classList.add("light");
       }
     },
-    [currentRoute]
+    [isPermaDark]
   );
 
   useScrollPosition(scrollCallback);
   return (
-    <header id="header" className={currentRoute.startsWith("/projects") ? "dark" : "light"} ref={headerRef}>
+    <header id="header" className={isPermaDark ? "dark" : "light"} ref={headerRef}>
       <Link className="img-container" href="/">
         <Image src={logo} alt="back" fill sizes="100%" />
       </Link>

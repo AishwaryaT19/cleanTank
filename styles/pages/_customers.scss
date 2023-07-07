@@ -44,7 +44,6 @@
           aspect-ratio: 1;
           display: grid;
           place-items: center;
-
           &:hover .card-content {
             transform: rotateY(180deg);
             cursor: pointer;

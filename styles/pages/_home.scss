@@ -46,7 +46,7 @@
     }
     .place {
       font-weight: 700;
-      animation: animate 1s linear forwards;
+      animation: 0.65s animate 0s linear forwards;
     }
     h1 {
       opacity: 0;
@@ -56,7 +56,7 @@
       line-height: 4rem;
       width: 100%;
       text-align: center;
-      animation: 1s animate 1s linear forwards;
+      animation: 0.65s animate 0.65s linear forwards;
     }
     p {
       opacity: 0;
@@ -66,7 +66,7 @@
       font-size: 1rem;
       line-height: 32px;
       font-weight: 400;
-      animation: 0.5s animate 2s linear forwards;
+      animation: 0.65s animate 1.3s linear forwards;
     }
     a {
       text-decoration: none;
@@ -81,7 +81,7 @@
       transition: 0.3s all ease;
       position: relative;
       opacity: 0;
-      animation: 1s animate 2.5s linear forwards;
+      animation: 0.65s animate 1.95s linear forwards;
     }
     a:hover {
       background-color: var(--white-col);

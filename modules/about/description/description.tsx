@@ -18,7 +18,7 @@ export default function Description() {
   useEffect(() => {
     let observer: undefined | IntersectionObserver = undefined;
     if (cardRef.current) {
-      const intersectionOptions: IntersectionObserverInit = { threshold: 0.6 };
+      const intersectionOptions: IntersectionObserverInit = { threshold: 0.5 };
       observer = new IntersectionObserver(intersectionCallBack, intersectionOptions);
       observer.observe(cardRef.current);
     }

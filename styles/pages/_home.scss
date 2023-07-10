@@ -66,6 +66,7 @@
       font-size: 1rem;
       line-height: 32px;
       font-weight: 400;
+
       animation: 0.65s animate 1.3s linear forwards;
     }
     a {
@@ -198,6 +199,7 @@
         line-height: 32px;
         font-weight: 400;
         color: var(--grey-col);
+        text-align: justify;
         word-wrap: break-word;
       }
       a {
@@ -408,7 +410,6 @@
         p {
           margin-top: 1vh;
           font-size: 0.7rem;
-          text-align: justify;
           line-height: 1.5rem;
           font-weight: 400;
         }

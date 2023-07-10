@@ -13,16 +13,27 @@ export default function Clients() {
       <div className="stuff-container">
         <span>Clients</span>
         <h4>{clientHead}</h4>
-        <div className="cards-container">
-          {clients.splice(0, 10).map((ser, index) => {
-            return (
-              <div className="card" key={index}>
-                <div className="img-container">
-                  <Image alt={ser.clientHead} src={ser.clientImage} fill sizes="100%" />
+        <div className="cards-wrapper">
+          <div className="cards-container">
+            {clients.slice(0, 10).map((ser, index) => {
+              return (
+                <div className="card" key={index}>
+                  <div className="img-container">
+                    <Image alt={ser.clientHead} src={ser.clientImage} fill sizes="100%" />
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+            {clients.slice(4, 10).map((ser, index) => {
+              return (
+                <div className="card" key={index}>
+                  <div className="img-container">
+                    <Image alt={ser.clientHead} src={ser.clientImage} fill sizes="100%" />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
         <Link href="/customers" className="cust">
           Explore more

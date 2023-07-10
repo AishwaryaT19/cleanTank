@@ -22,7 +22,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-300px * 10));
+    transform: translateX(calc(-300px * (var(--total-cards) - var(--on-screen))));
   }
 }
 #About {
@@ -160,6 +160,7 @@
       z-index: 2;
       width: 90%;
       display: flex;
+      overflow: hidden;
       flex-direction: column;
       span {
         @include spanStyle();
@@ -184,7 +185,7 @@
         color: var(--black-col);
         height: 45px;
         aspect-ratio: 3.5;
-        margin-top: 45px;
+        margin-top: 5vh;
         align-self: flex-end;
         display: grid;
         place-items: center;
@@ -196,15 +197,13 @@
         }
       }
       .cards-wrapper {
-        width: calc(6 * 300px);
+        width: calc(var(--on-screen) * 300px);
         height: 300px;
-        background-color: red;
         overflow: hidden;
         .cards-container {
-          width: calc(16 * 300px);
+          width: calc(var(--total-cards) * 300px);
           display: flex;
           height: 100%;
-          margin: auto;
           background-color: rgba(0, 0, 0, 0);
           color: var(--black-col);
           animation: Inscroll 10s linear 0s infinite normal forwards;
@@ -221,7 +220,7 @@
               width: 95%;
               aspect-ratio: 1;
               img {
-                object-fit: cover;
+                object-fit: contain;
               }
             }
 
@@ -240,14 +239,6 @@
   }
 }
 @media only screen and (max-width: 900px) {
-  @keyframes Inscroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-105px * 5));
-    }
-  }
   #About {
     .main {
       width: 100%;
@@ -310,52 +301,54 @@
     }
     .services {
       .stuff-container {
-        padding: 1vh 2.5vw;
+        padding: 1vh 1vw;
         width: 100%;
         h4 {
           font-size: 2rem;
         }
-        .cards-container {
-          width: calc(10 * 105px);
-          .card {
-            height: 100px;
-            width: 100px;
-            margin-right: 5px;
-            box-shadow: 1px 5px 15px var(--black-col);
-            padding: 1vh 1vw;
-            .icon {
-              font-size: 1.3rem;
-              // width: 20%;
-              // height: 30%;
-            }
-            h3 {
-              width: 100%;
-              text-align: center;
-              font-size: 1rem;
-              line-height: 1rem;
-            }
-            p {
-              width: 100%;
-              height: 50%;
-              font-size: 0.6rem;
-              line-height: 0.8rem;
-              letter-spacing: 0.1rem;
-            }
-            a {
-              width: 65%;
-              height: 15%;
-              @include display();
-              border: 1px solid var(--grey-col);
-              text-decoration: none;
-              color: var(--black-col);
-              position: relative;
-              font-size: 0.8rem;
-              &::after {
-                display: none;
+        .cards-wrapper {
+          height: 150px;
+          .cards-container {
+            .card {
+              box-shadow: 1px 5px 15px var(--black-col);
+              padding: 1vh 1vw;
+              .icon {
+                font-size: 1.3rem;
               }
-              &::before {
-                content: "";
-                display: none;
+              & > .img-container {
+                width: 75%;
+                margin: auto;
+              }
+              h3 {
+                width: 100%;
+                text-align: center;
+                font-size: 1rem;
+                line-height: 1rem;
+                margin: 0vh 1vw;
+              }
+              p {
+                width: 100%;
+                height: 50%;
+                font-size: 0.6rem;
+                line-height: 0.8rem;
+                letter-spacing: 0.1rem;
+              }
+              a {
+                width: 65%;
+                height: 15%;
+                @include display();
+                border: 1px solid var(--grey-col);
+                text-decoration: none;
+                color: var(--black-col);
+                position: relative;
+                font-size: 0.8rem;
+                &::after {
+                  display: none;
+                }
+                &::before {
+                  content: "";
+                  display: none;
+                }
               }
             }
           }

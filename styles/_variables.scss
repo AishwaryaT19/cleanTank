@@ -6,8 +6,12 @@
   --footer-height: 60vh;
   --flip-card-color-front: #2c3e50;
   --flip-card-color-back: #303030;
+  --on-screen: 6;
+  --total-cards: 16;
 
   @media only screen and (max-width: 900px) {
     --footer-height: 50vh;
+    --on-screen: 3;
+    --total-cards: 10;
   }
 }

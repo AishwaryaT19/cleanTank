@@ -87,21 +87,45 @@
             text-transform: capitalize;
             background-color: var(--flip-card-color-back);
             color: var(--white-col);
+            & > h3 {
+              height: 100%;
+              display: grid;
+              place-items: center;
+            }
           }
         }
       }
     }
   }
   @media only screen and (max-width: 900px) {
+    h2 {
+      font-size: 0.7rem;
+      line-height: 1rem;
+      letter-spacing: 0.5rem;
+      font-weight: 300;
+      margin-bottom: 1vh;
+    }
+    span {
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 1.9rem;
+    }
     .component-container {
+      padding: 15px 10vw;
       .type-container {
+        & > h2 {
+          font-size: 1.25rem;
+        }
         .card-container {
           grid-template-columns: repeat(3, 1fr);
           .card {
             .card-content {
               .img-container,
               .stuff-container {
-                padding: 5px;
+                padding: 3px;
+                & > h3 {
+                  font-size: 0.6rem;
+                }
               }
             }
           }

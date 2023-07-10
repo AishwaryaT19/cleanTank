@@ -2,7 +2,7 @@ import React, { useCallback, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import { logo } from "./Info";
 import Link from "next/link";
-import useScrollPosition from "../hooks/useScroll";
+import useScrollPosition from "../components/hooks/useScroll";
 import { FaWhatsapp, FaPhone, FaEnvelope } from "react-icons/fa";
 import { infs } from "./Info";
 import { useRouter } from "next/router";

@@ -18,6 +18,9 @@ export default function Footer() {
             <Link href={"tel:" + infs[0].number} target="_blank" rel="noopener noreferrer">
               {infs[0].number}
             </Link>
+            <Link href={"tel:" + infs[0].number} target="_blank" rel="noopener noreferrer">
+              {infs[0].alternateNum}
+            </Link>
             <Link href={"mailto:" + infs[0].email} target="_blank" rel="noopener noreferrer">
               {infs[0].email}
             </Link>

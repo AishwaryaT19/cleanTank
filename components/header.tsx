@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import React, { useCallback, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import { logo } from "./Info";
 import Link from "next/link";
@@ -11,7 +11,6 @@ export default function Header() {
   const router = useRouter();
   const headerRef = useRef<HTMLElement>(null);
   const isPermaDark = useMemo(() => /process|customers/.test(router.asPath), [router.asPath]);
-  console.log(isPermaDark);
   const scrollCallback = useCallback(
     (scrollPos: number) => {
       if (scrollPos > 75 || isPermaDark) {

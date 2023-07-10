@@ -276,21 +276,23 @@
 
         p {
           font-size: 0.7rem;
+          text-align: justify;
         }
         h2 {
           width: 100%;
-          text-align: center;
+          text-align: left;
           font-size: 1rem;
           line-height: 1.1rem;
           font-weight: 900;
         }
         h4 {
           font-size: 0.7rem;
+          text-align: left;
         }
         ul,
         h4 {
           text-align: left;
-          width: fit-content;
+          width: 100%;
           margin: auto;
         }
         ul {

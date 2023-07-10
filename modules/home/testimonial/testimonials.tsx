@@ -1,6 +1,7 @@
 import { testimonialHeading, testimonials } from "./info";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { FaQuoteLeft } from "react-icons/fa";
+import dynamic from "next/dynamic";
 
 export default function Testimonials() {
   const [testyIndex, setTesyIndex] = useState(0);

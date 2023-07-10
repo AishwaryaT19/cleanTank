@@ -34,17 +34,6 @@ export default function Footer() {
         <div className="rights">
           <span>{copyright}</span>
         </div>
-        {/* <div className="social">
-          <Link href={facebook} target="_blank" rel="noopener noreferrer">
-            <RiFacebookFill />
-          </Link>
-          <Link href={linkedIn} target="_blank" rel="noopener noreferrer">
-            <RiLinkedinFill />
-          </Link>
-          <Link href={insta} target="_blank" rel="noopener noreferrer">
-            <RiInstagramFill />
-          </Link>
-        </div> */}
       </div>
     </footer>
   );

@@ -70,7 +70,7 @@ export const projects: projectTypes[] = [
       "Final sterilization and disinfection is done by using UV radiation which is used to deactivate any suspended or floating bacteria remaining in the tank." //description of the project
   }
 ];
-export const projectSubHead = "Clean it with Passion"; //heading for the projects on home page
+export const processSubHead = "Clean it with Passion"; //heading for the projects on home page
 
 //footer information
 export const footer = "/assests/images/footer.jpg"; //image for footer

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useCallback, useEffect, useRef, useMemo } from "react";
 export default function ProjectCard({ proj }: { proj: Record<string, any> }) {
   const cardRef = useRef<HTMLDivElement>(null);

@@ -58,7 +58,7 @@ export const clients = [
   {
     clientHead: "ITBP",
     clientImage: "/assests/images/clients/itbp.png",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[2].type
   },
   {
     clientHead: "UPPCL",
@@ -98,7 +98,7 @@ export const clients = [
   {
     clientHead: "L & T",
     clientImage: "/assests/images/clients/l&t.png",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[3].type
   },
   {
     clientHead: "CPWD",
@@ -113,7 +113,7 @@ export const clients = [
   {
     clientHead: "DLF",
     clientImage: "/assests/images/clients/dlf.png",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[3].type
   },
   {
     clientHead: "RU",
@@ -138,7 +138,7 @@ export const clients = [
   {
     clientHead: "CSJMU",
     clientImage: "/assests/images/clients/csjmu.jpeg",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[2].type
   },
   {
     clientHead: "Kendriya vidhyala",
@@ -163,31 +163,31 @@ export const clients = [
   {
     clientHead: "Dainik Jagran",
     clientImage: "/assests/images/clients/dainik.png",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[3].type
   },
   {
     clientHead: "Pan Parag",
     clientImage: "/assests/images/clients/pan.jpeg",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[3].type
   },
   {
     clientHead: "Ashok Masale",
     clientImage: "/assests/images/clients/ashok.png",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[3].type
   },
   {
     clientHead: "Parag Dairy",
     clientImage: "/assests/images/clients/parag.png",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[3].type
   },
   {
     clientHead: "Goldiee Masale",
     clientImage: "/assests/images/clients/goldiee.png",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[3].type
   },
   {
     clientHead: "VSEC",
     clientImage: "/assests/images/clients/vsec.png",
-    clientType: clientCategorys[0].type
+    clientType: clientCategorys[2].type
   }
 ];

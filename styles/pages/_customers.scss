@@ -72,7 +72,6 @@
           .img-container {
             width: 100%;
             opacity: 0;
-
             transform: rotateY(180deg);
             aspect-ratio: 1;
             background-color: var(--flip-card-color-front);
@@ -85,6 +84,7 @@
             place-items: center;
             text-align: center;
             text-transform: capitalize;
+            transition-delay: 0.325s;
             background-color: var(--flip-card-color-back);
             color: var(--white-col);
             & > h3 {

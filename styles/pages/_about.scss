@@ -309,6 +309,9 @@
         span {
           padding: 1vh 3vw;
         }
+        .cust {
+          margin-right: 3vw;
+        }
         .cards-wrapper {
           height: 150px;
           .cards-container {
@@ -338,6 +341,7 @@
               a {
                 width: 65%;
                 height: 15%;
+
                 @include display();
                 border: 1px solid var(--grey-col);
                 text-decoration: none;

@@ -75,3 +75,4 @@ export const processSubHead = "Clean it with Passion"; //heading for the project
 //footer information
 export const footer = "/assests/images/footer.jpg"; //image for footer
 export const copyright = "Developed With 💖 in india By Hymns Of Web"; //copyright details
+export const hymnsofweb = "https://www.hymnsofweb.com/";

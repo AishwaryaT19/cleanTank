@@ -93,7 +93,9 @@
     .rights {
       width: 100%;
 
-      span {
+      .copyright {
+        text-decoration: none;
+        color: var(--white-col);
         text-transform: uppercase;
         font-size: 0.8rem;
         font-weight: 500;
@@ -160,7 +162,7 @@
       .rights {
         display: grid;
         place-items: center;
-        span {
+        .copyright {
           font-size: 0.4rem;
           align-items: center;
           text-align: center;

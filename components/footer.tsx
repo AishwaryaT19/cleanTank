@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { infs, footer, copyright, footerLogo } from "./Info";
+import { infs, footer, copyright, footerLogo, hymnsofweb } from "./Info";
 import Image from "next/image";
 export default function Footer() {
   return (
@@ -32,7 +32,9 @@ export default function Footer() {
       </div>
       <div className="sub">
         <div className="rights">
-          <span>{copyright}</span>
+          <Link href={hymnsofweb} className="copyright">
+            {copyright}
+          </Link>
         </div>
       </div>
     </footer>

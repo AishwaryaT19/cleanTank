@@ -1,10 +1,16 @@
+import { companyName } from "components/Info";
 import { clientCategorys, clientHead, clients } from "modules/about/client/info";
+import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 
 export default function Customers() {
   return (
     <section id="Customers">
+      <Head>
+        <title>{`${companyName} | Customers`}</title>
+        <meta name="description" content={companyName + " | " + clientHead} />
+      </Head>
       <h2>Customers</h2>
       <span>{clientHead}</span>
       <div className="component-container">

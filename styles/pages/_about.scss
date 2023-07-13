@@ -301,16 +301,18 @@
     }
     .services {
       .stuff-container {
-        padding: 1vh 1vw;
         width: 100%;
         h4 {
           font-size: 2rem;
+        }
+        h4,
+        span {
+          padding: 1vh 3vw;
         }
         .cards-wrapper {
           height: 150px;
           .cards-container {
             .card {
-              box-shadow: 1px 5px 15px var(--black-col);
               padding: 1vh 1vw;
               .icon {
                 font-size: 1.3rem;

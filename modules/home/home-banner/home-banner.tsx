@@ -9,7 +9,7 @@ export default function HomeBanner() {
       <span className="place">{place}</span>
       <h1>{main}</h1>
       <p>{objective}</p>
-      <Link href="/projects">{mainButton}</Link>
+      <Link href="/process">{mainButton}</Link>
     </section>
   );
 }

@@ -1,15 +1,15 @@
 export const testimonialHeading = "They love us"; //heading for testimonials
 export const testimonials = [
   {
-    name: "Aishwarya", //name of client giving the testimonial
-    message: "very good" //testimonial by the client
+    name: "BSNL", //name of client giving the testimonial
+    message: "good and proficient work" //testimonial by the client
   },
   {
-    name: "GS",
-    message: "nicee"
+    name: "L&T",
+    message: "impressed with the services provided by CleanTank"
   },
   {
-    name: "Sai",
-    message: "yooo"
+    name: "Punjab University",
+    message: "They have an excellent on-time devlivery"
   }
 ];

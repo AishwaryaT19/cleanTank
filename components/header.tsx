@@ -28,7 +28,7 @@ export default function Header() {
   return (
     <header id="header" className={isPermaDark ? "dark" : "light"} ref={headerRef}>
       <Link className="img-container" href="/">
-        <Image src={logo} alt="back" fill sizes="100%" />
+        <Image src={logo} alt="cleanTank-logo" fill sizes="100%" />
       </Link>
       <nav id="navigation" className={`${mobileView ? "active" : "inactive"}`}>
         <Link className="heading" href="/" onClick={() => setMobileView(!mobileView)}>

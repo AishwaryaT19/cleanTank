@@ -31,7 +31,7 @@ export default function Description() {
   return (
     <section className="desc" ref={cardRef}>
       <div className="img-container">
-        <Image src={About_company_backgr} alt="main" fill sizes="100%" />
+        <Image src={About_company_backgr} alt="About company" fill sizes="100%" />
       </div>
       <div className="stuff-container">
         <span>ABOUT US</span>

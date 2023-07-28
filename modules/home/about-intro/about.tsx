@@ -36,7 +36,7 @@ export default function About() {
   return (
     <section className="about-us">
       <div className="img-container" ref={imgRef}>
-        <Image src={yearsOfExpBackground} alt="main" fill sizes="100%" />
+        <Image src={yearsOfExpBackground} alt="Years of Experience" fill sizes="100%" />
         <div className="shadow">
           <span className="txt">More Than</span>
           <span className="exp">{years_of_Experience}</span>

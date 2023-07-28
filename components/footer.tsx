@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="main">
         <div className="info">
           <Link href="/" className="img-container">
-            <Image src={footerLogo} alt="back" fill sizes="100%" />
+            <Image src={footerLogo} alt="cleanTank Logo" fill sizes="100%" />
           </Link>
           <p>{infs[0].inf}</p>
         </div>

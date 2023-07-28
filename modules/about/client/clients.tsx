@@ -19,7 +19,7 @@ export default function Clients() {
               return (
                 <div className="card" key={index}>
                   <div className="img-container">
-                    <Image alt={ser.clientHead} src={ser.clientImage} fill sizes="100%" />
+                    <Image alt={ser.clientHead} src={ser.clientImage} loading="lazy" fill sizes="100%" />
                   </div>
                 </div>
               );
@@ -28,7 +28,7 @@ export default function Clients() {
               return (
                 <div className="card" key={index}>
                   <div className="img-container">
-                    <Image alt={ser.clientHead} src={ser.clientImage} fill sizes="100%" />
+                    <Image alt={ser.clientHead} src={ser.clientImage} loading="lazy" fill sizes="100%" />
                   </div>
                 </div>
               );

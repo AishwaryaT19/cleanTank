@@ -30,6 +30,7 @@
   .main {
     height: 90%;
     position: relative;
+    border-bottom: 1px solid grey;
     > div {
       display: flex;
       flex-direction: column;
@@ -74,16 +75,9 @@
           text-decoration: none;
           color: white;
           height: 30%;
+          font-size: 10px;
         }
       }
-    }
-    &::after {
-      position: absolute;
-      content: "";
-      height: 1px;
-      width: 100%;
-      background-color: grey;
-      bottom: 0;
     }
   }
   .sub {

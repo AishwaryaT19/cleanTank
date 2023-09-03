@@ -44,51 +44,42 @@
           aspect-ratio: 1;
           display: grid;
           place-items: center;
-          &:hover .card-content {
-            transform: rotateY(180deg);
-            cursor: pointer;
-            .img-container {
-              opacity: 1;
-            }
-            .stuff-container {
-              transition-delay: 0.3s;
-              opacity: 0;
-            }
-          }
           .card-content {
             width: 100%;
             aspect-ratio: 1;
-            transform-style: preserve-3d;
-            transition: 1s;
-          }
-          .img-container,
-          .stuff-container {
-            position: absolute;
-            width: 100%;
-            aspect-ratio: 1;
-            padding: 30px;
-          }
-          .img-container {
-            width: 100%;
-            opacity: 0;
-            transform: rotateY(180deg);
-            aspect-ratio: 1;
-            background-color: var(--flip-card-color-front);
-            img {
-              object-fit: contain;
-            }
-          }
-          .stuff-container {
-            display: grid;
-            place-items: center;
-            text-align: center;
-            text-transform: capitalize;
-            background-color: var(--flip-card-color-back);
-            color: var(--white-col);
-            & > h3 {
-              height: 100%;
+            position: relative;
+            & > .stuff-container {
+              position: absolute;
+              z-index: 1;
+              transform: scaleX(1);
+              transition: all 0.2s ease 0.2s;
+              background-color: black;
+              text-transform: capitalize;
+              color: white;
+              width: 100%;
+              aspect-ratio: 1;
               display: grid;
               place-items: center;
+              text-align: center;
+            }
+            & > .img-container {
+              z-index: 0;
+              position: absolute;
+              height: 100%;
+              aspect-ratio: 1;
+              object-fit: cover;
+              transform: scaleX(0);
+              transition: all 0.2s ease 0s;
+            }
+          }
+          .card-content:hover {
+            & > .stuff-container {
+              transition: all 0.2s ease 0s;
+              transform: scaleX(0);
+            }
+            & > .img-container {
+              transition: all 0.2s ease 0.2s;
+              transform: scaleX(1);
             }
           }
         }

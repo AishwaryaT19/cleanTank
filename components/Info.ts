@@ -5,8 +5,8 @@ interface projectTypes {
 }
 //Overall Information - these values cannot be null
 export const companyName = "Clean Tank"; //the name of the company
-export const logo = "/assests/images/logo.png";
-export const footerLogo = "/assests/images/footerLogo.png"; //logo of the company
+export const logo = "/assests/images/logo.webp";
+export const footerLogo = "/assests/images/footerLogo.webp"; //logo of the company
 interface infoTypes {
   inf: string;
   number: number;
@@ -73,6 +73,6 @@ export const projects: projectTypes[] = [
 export const processSubHead = "Clean it with Passion"; //heading for the projects on home page
 
 //footer information
-export const footer = "/assests/images/footer.jpg"; //image for footer
+export const footer = "/assests/images/footer.webp"; //image for footer
 export const copyright = "Developed With 💖 in india By Hymns Of Web"; //copyright details
 export const hymnsofweb = "https://www.hymnsofweb.com/";
